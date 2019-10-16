@@ -11,5 +11,5 @@ MacOS like dynamic wallpaper for Linux Ubuntu
 ```
 0 0-23/3 * * * gsettings set org.gnome.desktop.background picture-uri "file://~/Downloads/mojave_dynamic/$(($(date +%H)*2/3)).jpeg"
 
-30 1-23/3 * * * gsettings set org.gnome.desktop.background picture-uri "file://~/Downloads/mojave_dynamic/$(($(date +%H)*2/3)+1).jpeg"
+30 1-23/3 * * * gsettings set org.gnome.desktop.background picture-uri "file://~/Downloads/mojave_dynamic/$((($(date +%H)*2/3)+1)).jpeg"
 ```
